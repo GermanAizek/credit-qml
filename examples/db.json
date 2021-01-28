@@ -1,0 +1,18 @@
+[{
+	"fullname": "Yevgeny Nikolayevich Ponasenkov",
+	"credit_amount": 320000,
+	"term_begin": 12,
+	"term_end": 12,
+	"term_current": 6,
+	"total_paid": 125000,
+	"interest_rate": 3.3
+},
+{
+	"fullname": "Nikolay Vladimirovich Likhachev",
+	"credit_amount": 180000,
+	"term_begin": 3,
+	"term_end": 6,
+	"term_current": 6,
+	"total_paid": 170000,
+	"interest_rate": 3.9
+}]
