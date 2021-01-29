@@ -16,7 +16,6 @@ Solution implemented with C++ QML.
 - Supported compilers:
     - GCC 4.8 - 11.0 (and possibly later)
     - Clang 3.4 - 11.0 (and possibly later)
-    - Intel C++ Compiler 17.0.2 (and possibly later)
     - Microsoft Visual C++ 2019 (and possibly later)
 - Lightweight dependencies:
     - [picojson](https://github.com/kazuho/picojson)
@@ -32,10 +31,18 @@ git clone https://github.com/GermanAizek/credit-qml.git
 cd credit-qml
 ```
 
-## Build on Linux
+### Build on Linux
 
 ```
 mkdir build
 cmake ../sources
 make
+```
+
+### Build on Windows
+
+```
+mkdir build
+cmake ../sources
+# open *.sln solution with Visual Studio 2019 and build it
 ```
