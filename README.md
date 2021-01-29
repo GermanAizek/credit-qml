@@ -8,7 +8,7 @@ Solution implemented with C++ QML.
 
 ## License
 
-Сredit Manager is licensed under the ([GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html))
+Сredit Manager is licensed under the ([GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.html))
 
 ## Requirments
 
