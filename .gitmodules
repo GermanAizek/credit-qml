@@ -1,3 +1,4 @@
-[submodule "picojson"]
+[submodule "sources/picojson"]
 	path = sources/picojson
 	url = https://github.com/kazuho/picojson.git
+	branch = master
