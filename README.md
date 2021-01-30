@@ -13,22 +13,41 @@ Solution implemented with C++ QML.
 ## Requirments
 
 - CMake
+- Qt libraries
 - Supported compilers:
     - GCC 4.8 - 11.0 (and possibly later)
     - Clang 3.4 - 11.0 (and possibly later)
     - Microsoft Visual C++ 2019 (and possibly later)
-- Lightweight dependencies:
-    - [picojson](https://github.com/kazuho/picojson)
-    - Qt libraries:
-        - [Qt5 QML](https://doc.qt.io/qt-5/qtqml-index.html)
-        - [Qt5 Quick](https://doc.qt.io/qt-5/qtquick-index.html)
-        - [Qt5 Widgets](https://doc.qt.io/qt-5/qtwidgets-index.html)
+    
+## Dependencies
+
+- [picojson](https://github.com/kazuho/picojson) (header-only JSON parser)
+- [Qt5 QML](https://doc.qt.io/qt-5/qtqml-index.html)
+- [Qt5 Quick](https://doc.qt.io/qt-5/qtquick-index.html)
+- [Qt5 Widgets](https://doc.qt.io/qt-5/qtwidgets-index.html)
 
 ## Building
-
 ```
 git clone https://github.com/GermanAizek/credit-qml.git
 cd credit-qml
+```
+### Required Packages
+#### Debian/Ubuntu
+
+```
+sudo apt-get install qt5-default
+```
+
+#### Arch Linux
+
+```
+sudo pacman -Ss qt5-base
+```
+
+#### Gentoo
+
+```
+emerge -av @qt5-essentials
 ```
 
 ### Build on Linux
