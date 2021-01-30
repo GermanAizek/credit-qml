@@ -26,11 +26,14 @@ Solution implemented with C++ QML.
 - [Qt5 Quick](https://doc.qt.io/qt-5/qtquick-index.html)
 - [Qt5 Widgets](https://doc.qt.io/qt-5/qtwidgets-index.html)
 
-## Building
+## Cloning repository and moving to directory
+
 ```
 git clone https://github.com/GermanAizek/credit-qml.git
 cd credit-qml
 ```
+
+## Building on Linux
 ### Required Packages
 #### Debian/Ubuntu
 
@@ -50,15 +53,15 @@ sudo pacman -Ss qt5-base
 emerge -av @qt5-essentials
 ```
 
-### Build on Linux
+### Configure and build
 
 ```
 mkdir build
 cmake ../sources
 make
 ```
-
-### Build on Windows
+## Building on Windows
+### Configure and build
 
 ```
 mkdir build
