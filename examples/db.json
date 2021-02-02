@@ -12,7 +12,16 @@
 	"credit_amount": 180000,
 	"term_begin": 3,
 	"term_end": 6,
-	"term_current": 6,
-	"total_paid": 170000,
+	"term_current": 5,
+	"total_paid": 140000,
 	"interest_rate": 3.9
+},
+{
+	"fullname": "Владимир Евгеньевич Евтушенко",
+	"credit_amount": 150000,
+	"term_begin": 1,
+	"term_end": 2,
+	"term_current": 1,
+	"total_paid": 50000,
+	"interest_rate": 3.1
 }]
