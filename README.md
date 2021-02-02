@@ -26,36 +26,31 @@ Solution implemented with C++ QML.
 - [Qt5 Quick](https://doc.qt.io/qt-5/qtquick-index.html)
 - [Qt5 Widgets](https://doc.qt.io/qt-5/qtwidgets-index.html)
 
-## Cloning repository and moving to directory
-
-```
-git clone https://github.com/GermanAizek/credit-qml.git
-cd credit-qml
-```
-
 ## Building on Linux
-### Required Packages
-#### Debian/Ubuntu
 
+execute all commands in the terminal
+
+### Required Packages
+
+#### Debian/Ubuntu
 ```
-sudo apt-get install qt5-default
+sudo apt-get install qt5-default git
 ```
 
 #### Arch Linux
-
 ```
-sudo pacman -Ss qt5-base
+sudo pacman -Ss qt5-base git
 ```
 
 #### Gentoo
-
 ```
-emerge -av @qt5-essentials
+emerge -av @qt5-essentials @dev-vcs/git
 ```
 
 ### Configure and build
-
 ```
+git clone https://github.com/GermanAizek/credit-qml.git
+cd credit-qml
 mkdir build
 cmake ../sources
 make
@@ -63,8 +58,27 @@ make
 ## Building on Windows
 ### Configure and build
 
-```
-mkdir build
-cmake ../sources
-# open *.sln solution with Visual Studio 2019 and build it
-```
+1) download any Windows git client and clone repository with url ( https://github.com/GermanAizek/credit-qml.git )
+
+- Example:
+  - download git client [git-scm.com](https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/Git-2.30.0.2-64-bit.exe)
+  - execute in cmd or powershell
+  ```
+  git clone https://github.com/GermanAizek/credit-qml.git
+  cd credit-qml
+  ```
+
+2) download Qt5 for Windows: [official site](https://download.qt.io/official_releases/qt/5.12/5.12.10/qt-opensource-windows-x86-5.12.10.exe)
+
+3) during the installation stage, select an optional component for your version of Visual Studio (example below)
+![Installing a Component](https://github.com/GermanAizek/credit-qml/blob/main/docs/screenshots/qt_install_msvc.jpg)
+
+4) execute in cmd or powershell
+   ```
+   mkdir build
+   cmake -DQt5_DIR="<path to Qt lib cmake>" ../sources
+   # Example: cmake -DQt5_DIR="C:/Qt/5.6/msvc2013_64/lib/cmake/Qt5" ../sources
+   ```
+
+5) open *.sln solution with Visual Studio
+6) build projects and run it
