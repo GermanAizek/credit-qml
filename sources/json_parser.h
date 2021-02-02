@@ -11,16 +11,7 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
-//#include <cstdint>
-const char* error_messages[2] = {
-	"Ошибка парсинга json файла:\n%1",
-	"Json файл не является массивом, проверьте правильность написания в нем."
-};
-
-enum class ErrorType {
-	kFailedParse = 0,
-	kNotArray
-};
+#include <cmath>
 
 struct Info {
 	std::string fullname;
@@ -29,7 +20,9 @@ struct Info {
 	int64_t term_end;
 	int64_t term_current;
 	int64_t total_paid;
-	float interest_rate;
+	double interest_rate;
+	int64_t total_payment;
+	long double avgmonthly_payment;
 };
 
 typedef picojson::value::array JsonArray;
