@@ -18,6 +18,10 @@ elseif(WIN32)
 endif()
 
 # 3rd party
+if(APPLE AND EXISTS /usr/local/opt/qt5)
+	# hotfix for Apple
+	list(APPEND CMAKE_PREFIX_PATH "/usr/local/opt/qt5")
+endif()
 find_package(Qt5 COMPONENTS Widgets Qml Quick REQUIRED)
 
 include_directories(${Qt5Widgets_INCLUDE_DIRS} ${QtQml_INCLUDE_DIRS})
