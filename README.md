@@ -2,6 +2,12 @@
 # Сredit Manager C++
 
 [![Licence](https://img.shields.io/badge/license-GPL-blue.svg?style=flat)](LICENSE)
+[![Github All Releases](https://img.shields.io/github/downloads/GermanAizek/credit-qml/total.svg)](https://github.com/GermanAizek/credit-qml/releases)
+[![GitHub release](https://img.shields.io/github/release/GermanAizek/credit-qml/all.svg)](https://github.com/GermanAizek/credit-qml/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/GermanAizek/credit-qml.svg)](https://github.com/GermanAizek/credit-qml/releases)
+[![GitHub license](https://img.shields.io/github/license/GermanAizek/credit-qml.svg)](https://github.com/GermanAizek/credit-qml/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/GermanAizek/credit-qml.svg)](https://github.com/GermanAizek/credit-qml/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/GermanAizek/credit-qml.svg)](https://github.com/GermanAizek/credit-qml/network)
 
 This repository is a simple example of developing an application for a credit institution.
 Solution implemented with C++ QML.
