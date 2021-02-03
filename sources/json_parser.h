@@ -13,6 +13,10 @@
 #include <vector>
 #include <cmath>
 
+#ifdef __arm__
+#include <QDebug>
+#endif
+
 struct Info {
 	std::string fullname;
 	int64_t credit_amount;
