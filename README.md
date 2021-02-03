@@ -6,6 +6,8 @@
 This repository is a simple example of developing an application for a credit institution.
 Solution implemented with C++ QML.
 
+This project is aimed at demonstrating the possibilities of easy portability of code to any platforms.
+
 ## License
 
 Сredit Manager is licensed under the ([GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.html))
@@ -26,80 +28,8 @@ Solution implemented with C++ QML.
 - [Qt5 Quick](https://doc.qt.io/qt-5/qtquick-index.html)
 - [Qt5 Widgets](https://doc.qt.io/qt-5/qtwidgets-index.html)
 
-## Building on Linux
+## Building
 
-Execute all commands in the terminal
-
-### Required Packages
-
-#### Debian/Ubuntu
-```
-sudo apt-get install git cmake qt5-default 
-```
-
-#### Arch Linux
-```
-sudo pacman -Ss git cmake qt5-base qt5-declarative
-```
-
-#### Gentoo
-```
-emerge -av @dev-vcs/git @dev-util/cmake @qt5-essentials
-```
-
-#### Armbian/Raspberry Pi OS
-```
-sudo apt-get install git cmake qt5-default qtdeclarative5-dev
-```
-
-### Configure and build
-```
-git clone --recurse-submodules https://github.com/GermanAizek/credit-qml.git
-cd credit-qml
-mkdir build && cd build
-cmake ../sources
-make
-```
-
-## Building on FreeBSD
-### Required Packages
-```
-pkg install git cmake qt5-qmake qt5-buildtools qt5-core qt5-widgets qt5-gui qt5-declarative
-```
-
-### Configure and build
-```
-git clone --recurse-submodules https://github.com/GermanAizek/credit-qml.git
-cd credit-qml
-mkdir build && cd build
-cmake ../sources
-make
-```
-
-## Building on Windows
-### Configure and build
-
-1) download any Windows git client and clone repository with url ( https://github.com/GermanAizek/credit-qml.git )
-
-- Example:
-  - download git client [git-scm.com](https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/Git-2.30.0.2-64-bit.exe)
-  - execute in cmd or powershell
-  ```
-  git clone --recurse-submodules https://github.com/GermanAizek/credit-qml.git
-  cd credit-qml
-  ```
-
-2) download Qt5 for Windows: [official site](https://download.qt.io/official_releases/qt/5.12/5.12.10/qt-opensource-windows-x86-5.12.10.exe)
-
-3) during the installation stage, select an optional component for your version of Visual Studio (example below)
-![Installing a Component](https://github.com/GermanAizek/credit-qml/blob/main/docs/screenshots/qt_install_msvc.jpg)
-
-4) execute in cmd or powershell
-   ```
-   mkdir build && cd build
-   cmake -DQt5_DIR="<path to Qt lib cmake>" ../sources
-   # Example: cmake -DQt5_DIR="C:/Qt/5.6/msvc2013_64/lib/cmake/Qt5" ../sources
-   ```
-
-5) open *.sln solution with Visual Studio
-6) build projects and run it
+- [Building on Linux](https://github.com/GermanAizek/credit-qml/wiki/Building-on-Linux)
+- [Building on FreeBSD](https://github.com/GermanAizek/credit-qml/wiki/Building-on-FreeBSD)
+- [Building on Windows](https://github.com/GermanAizek/credit-qml/wiki/Building-on-Windows)
