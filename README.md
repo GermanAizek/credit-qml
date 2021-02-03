@@ -39,7 +39,7 @@ sudo apt-get install git cmake qt5-default
 
 #### Arch Linux
 ```
-sudo pacman -Ss git cmake qt5-base
+sudo pacman -Ss git cmake qt5-base qt5-declarative
 ```
 
 #### Gentoo
@@ -47,11 +47,16 @@ sudo pacman -Ss git cmake qt5-base
 emerge -av @dev-vcs/git @dev-util/cmake @qt5-essentials
 ```
 
+#### Armbian/Raspberry Pi OS
+```
+sudo apt-get install git cmake qt5-default qtdeclarative5-dev
+```
+
 ### Configure and build
 ```
 git clone --recurse-submodules https://github.com/GermanAizek/credit-qml.git
 cd credit-qml
-mkdir build
+mkdir build && cd build
 cmake ../sources
 make
 ```
@@ -64,9 +69,9 @@ pkg install git cmake qt5-qmake qt5-buildtools qt5-core qt5-widgets qt5-gui qt5-
 
 ### Configure and build
 ```
-git clone --recurse-submodules https://github.com/GermanAizek/credit-qml.git --recurse-submodules
+git clone --recurse-submodules https://github.com/GermanAizek/credit-qml.git
 cd credit-qml
-mkdir build
+mkdir build && cd build
 cmake ../sources
 make
 ```
@@ -91,7 +96,7 @@ make
 
 4) execute in cmd or powershell
    ```
-   mkdir build
+   mkdir build && cd build
    cmake -DQt5_DIR="<path to Qt lib cmake>" ../sources
    # Example: cmake -DQt5_DIR="C:/Qt/5.6/msvc2013_64/lib/cmake/Qt5" ../sources
    ```
