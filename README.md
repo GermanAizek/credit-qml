@@ -28,33 +28,49 @@ Solution implemented with C++ QML.
 
 ## Building on Linux
 
-execute all commands in the terminal
+Execute all commands in the terminal
 
 ### Required Packages
 
 #### Debian/Ubuntu
 ```
-sudo apt-get install qt5-default git
+sudo apt-get install git cmake qt5-default 
 ```
 
 #### Arch Linux
 ```
-sudo pacman -Ss qt5-base git
+sudo pacman -Ss git cmake qt5-base
 ```
 
 #### Gentoo
 ```
-emerge -av @qt5-essentials @dev-vcs/git
+emerge -av @dev-vcs/git @dev-util/cmake @qt5-essentials
 ```
 
 ### Configure and build
 ```
-git clone https://github.com/GermanAizek/credit-qml.git
+git clone --recurse-submodules https://github.com/GermanAizek/credit-qml.git
 cd credit-qml
 mkdir build
 cmake ../sources
 make
 ```
+
+## Building on FreeBSD
+### Required Packages
+```
+pkg install git cmake qt5-qmake qt5-buildtools qt5-core qt5-widgets qt5-gui qt5-declarative
+```
+
+### Configure and build
+```
+git clone --recurse-submodules https://github.com/GermanAizek/credit-qml.git --recurse-submodules
+cd credit-qml
+mkdir build
+cmake ../sources
+make
+```
+
 ## Building on Windows
 ### Configure and build
 
@@ -64,7 +80,7 @@ make
   - download git client [git-scm.com](https://github.com/git-for-windows/git/releases/download/v2.30.0.windows.2/Git-2.30.0.2-64-bit.exe)
   - execute in cmd or powershell
   ```
-  git clone https://github.com/GermanAizek/credit-qml.git
+  git clone --recurse-submodules https://github.com/GermanAizek/credit-qml.git
   cd credit-qml
   ```
 
