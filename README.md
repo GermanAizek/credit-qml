@@ -1,7 +1,6 @@
 
 # Сredit Manager C++
 
-[![Licence](https://img.shields.io/badge/license-GPL-blue.svg?style=flat)](LICENSE)
 [![Github All Releases](https://img.shields.io/github/downloads/GermanAizek/credit-qml/total.svg)](https://github.com/GermanAizek/credit-qml/releases)
 [![GitHub release](https://img.shields.io/github/release/GermanAizek/credit-qml/all.svg)](https://github.com/GermanAizek/credit-qml/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/GermanAizek/credit-qml.svg)](https://github.com/GermanAizek/credit-qml/releases)
