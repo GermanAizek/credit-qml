@@ -1,5 +1,5 @@
 
-# Сredit Manager C++
+# C++/Qt QML Json Example
 
 [![Github All Releases](https://img.shields.io/github/downloads/GermanAizek/credit-qml/total)](https://github.com/GermanAizek/credit-qml/releases)
 [![GitHub release](https://img.shields.io/github/release/GermanAizek/credit-qml/all)](https://github.com/GermanAizek/credit-qml/releases)
@@ -8,10 +8,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/GermanAizek/credit-qml)](https://github.com/GermanAizek/credit-qml/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/GermanAizek/credit-qml)](https://github.com/GermanAizek/credit-qml/network)
 
-This repository is a simple example of developing an application for a credit institution.
-Solution implemented with C++ QML.
+This example demonstrates how to work with json files using the [picojson](https://github.com/kazuho/picojson) library.
+Work with graphics using QML.
 
-This project is aimed at demonstrating the possibilities of easy portability of code to any platforms.
+The project is cross-platform and supports popular platforms (see below in 'Building')
 
 ## License
 
